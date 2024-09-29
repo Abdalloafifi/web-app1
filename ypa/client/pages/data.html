@@ -1,0 +1,32 @@
+<div class="container">
+    <h1>Page 2</h1>
+    <div class="user-list">
+        <ul>
+            <li ng-repeat="user in users" class="user-card">
+                <h3>{{ user.name }}</h3>
+                <p>Email: {{ user.email }}</p>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--<div class="container">
+    <h1 class="title">قائمة المستخدمين</h1>
+    <div class="user-table-wrapper">
+        <table class="user-table">
+            <thead>
+                <tr>
+                    <th class="table-header">اسم المستخدم</th>
+                    <th class="table-header">البريد الإلكتروني</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="user in users" class="table-row">
+                    <td class="table-data">{{ user.name }}</td>
+                    <td class="table-data">{{ user.email }}</td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="no-users-message" ng-if="users.length === 0">لا توجد مستخدمين للعرض.</p>
+    </div>
+</div> variableName = ;
+-->

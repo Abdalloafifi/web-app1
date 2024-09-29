@@ -1,0 +1,34 @@
+<i class='bx bx-plus-medical' id="toggleIconPage1" onclick="toggleForm()"></i>
+
+<!-- الحاوية الخاصة بالفورم -->
+<div class="form-container" id="formContainer" style="display: none;">
+    <h1>Form Page</h1>
+    <form ng-submit="submitForm()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" ng-model="formData.name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" ng-model="formData.email" required>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+<!--
+<i class='bx bx-plus-medical' style="color: black;" id="toggleIconPage1" onclick="toggleVisibility()"></i>
+
+<div id="linksDivPage1" class="form-wrapper" ng-show="isVisible " style="display: none;">
+    <form ng-submit="addUser()" id="userForm">
+
+        <h2>تسجيل المستخدم</h2>
+        
+        <label for="user-name">اسم المستخدم:</label>
+        <input type="text" id="user-name" placeholder="أدخل اسم المستخدم" ng-model="userName" required>
+
+        <label for="user-email">البريد الإلكتروني:</label>
+        <input type="email" id="user-email" placeholder="أدخل البريد الإلكتروني" ng-model="userEmail" required>
+
+        <button type="button" onclick="toggleVisibility()">إغلاق</button>
+        <button type="submit">إرسال</button>
+
+    </form>
+</div> -->

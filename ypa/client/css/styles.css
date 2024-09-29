@@ -1,0 +1,216 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+.user-list {
+    margin-top: 20px;
+}
+
+.user-card {
+    background-color: #e9f5ff;
+    border: 1px solid #bcd4e6;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+    transition: background-color 0.3s;
+}
+
+.user-card:hover {
+    background-color: #cfe9ff;
+}
+
+h3 {
+    margin: 0;
+    color: #007bff;
+}
+
+p {
+    margin: 5px 0;
+    color: #555;
+}
+
+/* تنسيق الأيقونة */
+#toggleIconPage1 {
+    font-size: 24px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* التأثير عند التمرير على الأيقونة */
+#toggleIconPage1:hover {
+    color: #ffc107;
+    transform: rotate(90deg);
+}
+
+.form-container {
+    position: relative;
+    right: -90px;
+    top: 20px;
+    background-color: #fff;
+    padding: 80px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    animation: slideIn 0.6s ease-out;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+}
+
+h1::after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 4px;
+    background-color: #007bff;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+    border-radius: 2px;
+}
+
+label {
+    display: block;
+    text-align: left;
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="email"]:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* تنسيق شريط التنقل */
+nav {
+    background-color: #333;
+    /* لون خلفية شريط التنقل */
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    color: #fff;
+    /* لون النص */
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 15px;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+nav a:hover {
+    color: #ffc107;
+    /* لون النص عند التمرير */
+}
+
+nav a:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #ffc107;
+    /* لون الخط السفلي عند التمرير */
+    transition: width 0.3s;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+nav a:hover:after {
+    width: 100%;
+    /* يظهر الخط السفلي بالكامل عند التمرير */
+}
+
+nav a.active {
+    color: #ffc107;
+    /* لون الرابط النشط */
+    font-weight: bold;
+}
+
+nav a.active:after {
+    width: 100%;
+    /* يظهر الخط السفلي بشكل دائم للرابط النشط */
+}
+
+nav a:not(:last-child)::after {
+    content: '|';
+    /* الفاصل بين الروابط */
+    color: #fff;
+    margin-left: 10px;
+    margin-right: 10px;
+}

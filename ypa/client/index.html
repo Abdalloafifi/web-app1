@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AngularJS</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controller.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+
+<!-- شريط التنقل -->
+
+<body>
+    <nav>
+        <a href="#!/form">Form Page</a>
+        <a href="#!/data">Data Page</a>
+    </nav>
+
+    <div ng-view></div>
+    <!-- هنا هيظهر الـ view الخاص بكل صفحة -->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
+
+<!--
+
+
+
+
+    <div>
+        <nav>
+            <img class="img" src="img/about.jpg">
+            <input type="text" placeholder="بحث عن المعلومات" ng-model="searchText">
+
+            <div class="container" id="toggleIcon" onclick="x(this);y(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <div id="linksDiv" class="links">
+                <a href="#!/page2">انتقل إلى الصفحة 2</a>
+                <a href="#!/page1">انتقل إلى الصفحة 1</a>
+                <a href="#!/">انتقل إلى الصفحة 0</a>
+            </div>
+        </nav>
+
+    </div>
+    <div ng-view></div>
+    <div ng-controller="MyController">
+
+    </div>
+    <script src="js/scripts.js"></script> 
+</body>
+
+</html> 
+-->
